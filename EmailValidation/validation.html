@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validation</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <div>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Your username.." required>
+            <p id="invalidUser" class="invalid">Enter valid username</p>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+            <p id="invalidEmail" class="invalid">Enter valid email</p>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Your password.." id="password" required>
+            <p id="invalidPassword" class="invalid">Enter valid password</p>
+            <input type="submit" value="Submit" onclick="onSubmit()">
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
